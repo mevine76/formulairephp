@@ -13,7 +13,7 @@
         <?php $showForm = true; ?>
         <?php if ($showForm) { ?>
             <div class="col-lg-4 bg-light shadow m-5 p-5 border">
-                <p class="h2 mb-5 text-center">Administrateurs <br> Veuillez vous identifier</p>
+                <p class="h2 mb-5 text-center">Administrateurs <br>Déjà inscrit <br> Veuillez vous identifier</p>
                 <form action="" method="POST" novalidate>
                     <div class="mb-3">
                     <label for="email" class="form-label">Courriel : </label>
@@ -30,7 +30,8 @@
                     </div>
                     <div>
                     <button class="d-block mt-3 mx-auto btn btn-secondary">Valider</button>
-                    <a href="../controllers/controller-signup.php" class="link-primary mt-2">s'inscrire</a>
+                    <br>
+                    <a href="../controllers/controller-signup.php" class="link-primary mt-2">mot de passe oublié</a><a href="../controllers/SignupController.php" class="link-primary mt-2">s'inscrire</a>
                     </div>
                     <div class="text-center">
                     </div>

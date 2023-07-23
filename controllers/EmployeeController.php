@@ -1,7 +1,7 @@
 <?php
 include_once '../models/EmployeeModel.php';
 include_once '../views/login_employee.php';
-include_once '../views/signup.php';
+
 class EmployeeController {
     // Méthode pour afficher le formulaire de connexion pour l'employé
     public function showLoginForm() {
@@ -47,13 +47,13 @@ class EmployeeController {
     return $html;
     }
 
-    // Méthode pour traiter le formulaire de connexion pour l'administrateur
+    // Méthode pour traiter le formulaire de connexion pour l'employé
     public function processLogin() {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
         if (EmployeeModel::authenticateEmployee($email, $password)) {
-            // L'administrateur est authentifié, redirigez-le vers la page d'accueil
+            // l'employé est authentifié, redirigez-le vers la page d'accueil
             header("Location: index.php?action=dashboard");
             exit;
         } else {
@@ -62,10 +62,10 @@ class EmployeeController {
         }
     }
 
-    // Méthode pour afficher la page d'accueil de l'administrateur après la connexion
+    // Méthode pour afficher la page d'accueil de l'employé après la connexion
     public function showDashboard() {
-        // Affichez ici la page d'accueil de l'administrateur avec les fonctionnalités de gestion des notes de frais
+        // Affichez ici la page d'accueil de l'employé avec les fonctionnalités de gestion des notes de frais
     }
 
-    // Autres méthodes pour la gestion des administrateurs (ajouter, modifier, supprimer)
+    // Autres méthodes pour la gestion des l'employé (ajouter, modifier, supprimer)
 }

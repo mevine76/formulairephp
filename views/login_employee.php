@@ -13,7 +13,7 @@
         <?php $showForm = true; ?>
         <?php if ($showForm) { ?>
             <div class="col-lg-4 bg-light shadow m-5 p-5 border">
-                <p class="h2 mb-5 text-center">Employées <br> Veuillez vous identifier</p>
+                <p class="h2 mb-5 text-center">Employées <br>Déjà inscrit ? <br> Veuillez vous identifier</p>
                 <form action="" method="POST" novalidate>
                     <div class="mb-3">
                     <label for="email" class="form-label">Courriel : </label>
