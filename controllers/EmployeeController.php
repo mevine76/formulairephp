@@ -45,6 +45,7 @@ class EmployeeController {
         <?php } ?>
     </div>';  
     return $html;
+
     }
 
     // Méthode pour traiter le formulaire de connexion pour l'employé
